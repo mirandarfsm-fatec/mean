@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/tmp/contatooh
+    environment:
+      - HOST_MONGO=mongo
+      - PORT_MONGO=27017
+  mongo:
+    image: mongo
