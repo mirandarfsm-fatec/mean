@@ -10,4 +10,4 @@ services:
       - HOST_MONGO=mongo
       - PORT_MONGO=27017
   mongo:
-    image: mongo
+    image: mongo:2.6.6
