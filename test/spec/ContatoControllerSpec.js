@@ -7,8 +7,8 @@ describe("ContatoController",function(){
 		inject(function($injector,_$httpBackend_){
 			$scope = $injector.get('$rootScope').$new();
 			$httpBackend = _$httpBackend_;
-			$httpBackend.when('GET','/contato/1').respond({_id:'1'});
-			$httpBackend.when('GET','/contato').respond([{}]);
+			$httpBackend.when('GET','/contatos/1').respond({_id:'1'});
+			$httpBackend.when('GET','/contatos').respond([{}]);
 		});
 	});
 
