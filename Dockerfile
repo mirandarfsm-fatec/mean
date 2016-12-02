@@ -12,6 +12,7 @@ RUN npm install -g bower@1.3
 RUN npm install -g grunt-cli@0.1 
 RUN npm install -g karma-cli@0.0 #--no-bin-link
 npm install -g protractor@1.5
+RUN webdriver-manager update
 RUN npm install
 RUN bower install --allow-root
 
